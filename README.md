@@ -1,6 +1,19 @@
 # Bookmarklets
 Set of useful JavaScript bookmarklets
 
+<hr>
+
+## To add bookmarklet follow these steps:
+
+1. Copy bookmarklet
+2. Right click on `bookmarks bar`
+3. Select `Add page`
+4. Add a name of the bookmarklet in `name` field
+5. Paste bookmarklet in `URL` field
+
+<hr>
+
+## List of Bookmarklets
 
 **Toggle Design Mode**
 
