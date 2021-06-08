@@ -4,12 +4,13 @@ javascript:(function(){
     /* <--------------------- QR CODE INSERT LOGIC ---------------------> */ 
     const qrCodeId = 'reviewAppQrCode';
     const getReviewAppQrCodeImage = () => document.querySelector(`#${qrCodeId} img`);
+    const getBranchAction = () => document.querySelector('.branch-action');
+
     const addQrCodeImageElement = () => {
-        const branchAction = document.querySelector('.branch-action');
         const qrCodeElement = document.createElement('div');
         qrCodeElement.id = qrCodeId;
         qrCodeElement.style.cssText = 'display: flex; align-items: center; justify-content: center; margin: 1rem;';
-        branchAction.appendChild(qrCodeElement);
+        getBranchAction().appendChild(qrCodeElement);
     };
     const generateQrCodeImage = () => {
         const { href: reviewAppLink } = document.querySelector('.merge-status-item a.btn');
@@ -19,7 +20,7 @@ javascript:(function(){
         const qrCodeImage = getReviewAppQrCodeImage();
         qrCodeImage.style.cssText = 'border: 1rem solid white;'
     };
-    if (getReviewAppQrCodeImage()) {
+    if (getReviewAppQrCodeImage() || !getBranchAction()) {
         return;
     };
     
