@@ -19,3 +19,28 @@ javascript:(function(){var t;!function(){function e(t){this.mode=h.MODE_8BIT_BYT
 ```
 javascript:(function(){window.isElementsOutlineVisible=!Boolean(window.isElementsOutlineVisible),window.isElementsOutlineVisible?document.head.insertAdjacentHTML("beforeend",'<style id="elementsOutlines">* {outline: 1px dashed red !important}</style>'):document.getElementById("elementsOutlines")?.remove();})();
 ```
+
+**Clear Cookies**
+
+```
+javascript:(function(){document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); }); })();
+```
+
+**Clear Local Storage**
+
+```
+javascript:(function(){localStorage.clear()}());
+```
+
+**Clear Session Storage**
+
+```
+javascript:(function(){sessionStorage.clear()}());
+```
+
+
+**Clear All Cache**
+
+```
+javascript:(function(){(()=>localStorage.clear())(),(()=>sessionStorage.clear())(),document.cookie.split(";").forEach(e=>{document.cookie=e.replace(/^ +/,"").replace(/=.*/,`=;expires=${(new Date).toUTCString()};path=/`)}),window.location.reload(true);}());
+```
