@@ -1,0 +1,25 @@
+{
+  "name": "bookmarklets",
+  "version": "1.0.0",
+  "description": "Set of useful JavaScript bookmarklets",
+  "main": "index.js",
+  "scripts": {
+    "minify": "node minify-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kml1990/bookmarklets.git"
+  },
+  "keywords": [
+    "bookmarklets"
+  ],
+  "author": "Kamil Stepaniak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kml1990/bookmarklets/issues"
+  },
+  "homepage": "https://github.com/kml1990/bookmarklets#readme",
+  "dependencies": {
+    "uglify-js": "^3.13.9"
+  }
+}
