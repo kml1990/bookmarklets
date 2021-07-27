@@ -1,5 +1,5 @@
 # Bookmarklets
-Set of useful JavaScript bookmarklets
+Set of useful JavaScript bookmarklets 
 
 <hr>
 
